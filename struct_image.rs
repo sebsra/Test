@@ -416,7 +416,7 @@ mod image_tests {
     #[test]
     fn test_functions() {
         use crate::visual_tests::encode_and_write;
-        
+
         //initialize test images of all color types
         let rgba_image = ImageStruct {
             width: 6,
@@ -512,63 +512,61 @@ mod image_tests {
             png::BitDepth::Four,
         );
 
-        // tests 
-        let gray_png= read_png("visual_tests/test_images/gray_image.png").unwrap();
-        assert_eq!(gray_png.pixels, gray_image.to_rgb().unwrap().convert_to_grayscale().unwrap().pixels);
-        assert_eq!(gray_png.pixels, rgb_image.to_rgb().unwrap().convert_to_grayscale().unwrap().pixels);
-        assert_eq!(gray_png.pixels, rgba_image.to_rgb().unwrap().convert_to_grayscale().unwrap().pixels);
-        assert_eq!(gray_png.pixels, gray_alpha_image.to_rgb().unwrap().convert_to_grayscale().unwrap().pixels);
-        assert_eq!(gray_png.pixels, indexed_rgba_image.to_rgb().unwrap().convert_to_grayscale().unwrap().pixels);
-        assert_eq!(gray_png.pixels, indexed_rgba_image.to_rgb().unwrap().convert_to_grayscale().unwrap().pixels);
-
+        // tests
+        let gray_png = read_png("visual_tests/test_images/gray_image.png").unwrap();
+        assert_eq!(
+            gray_png.pixels,
+            gray_image
+                .to_rgb()
+                .unwrap()
+                .convert_to_grayscale()
+                .unwrap()
+                .pixels
+        );
+        assert_eq!(
+            gray_png.pixels,
+            rgb_image
+                .to_rgb()
+                .unwrap()
+                .convert_to_grayscale()
+                .unwrap()
+                .pixels
+        );
+        assert_eq!(
+            gray_png.pixels,
+            rgba_image
+                .to_rgb()
+                .unwrap()
+                .convert_to_grayscale()
+                .unwrap()
+                .pixels
+        );
+        assert_eq!(
+            gray_png.pixels,
+            gray_alpha_image
+                .to_rgb()
+                .unwrap()
+                .convert_to_grayscale()
+                .unwrap()
+                .pixels
+        );
+        assert_eq!(
+            gray_png.pixels,
+            indexed_rgba_image
+                .to_rgb()
+                .unwrap()
+                .convert_to_grayscale()
+                .unwrap()
+                .pixels
+        );
+        assert_eq!(
+            gray_png.pixels,
+            indexed_rgba_image
+                .to_rgb()
+                .unwrap()
+                .convert_to_grayscale()
+                .unwrap()
+                .pixels
+        );
     }
 }
-
-
-/*
-pub fn convert_alpha_to_background_color<T: Pixel + Clone + Copy + Copy>(
-    image: &ImageStruct<T>,
-    background: f32,
-) -> io::Result<ImageStruct<f32>> {
-    let converted_pixels: Vec<f32> = image.pixels.iter().map(|pixel| pixel.to_f32()).collect();
-
-    let (gray_data, color_type) = match image.color_type {
-        ColorType::GrayscaleAlpha => (
-            converted_pixels
-                .chunks(3)
-                .map(|ga| {
-                    let g = ga[0] as f32;
-                    let a = ga[1] as f32;
-                    a * g + (1.0 - a) * background
-                })
-                .collect(),
-            ColorType::Grayscale,
-        ),
-        ColorType::Rgba => (
-            converted_pixels
-                .chunks(4)
-                .flat_map(|rgba| {
-                    let a = rgba[3] as f32;
-                    let r = a * rgba[0] as f32 + (1.0 - a) * background;
-                    let g = a * rgba[1] as f32 + (1.0 - a) * background;
-                    let b = a * rgba[2] as f32 + (1.0 - a) * background;
-                    vec![r, g, b]
-                })
-                .collect(),
-            ColorType::Rgb,
-        ),
-        _ => return Err(io::Error::new(
-            ErrorKind::InvalidData,
-            "function convert_alpha_to_background only supports ColorTypes GrayscaleAlpha and Rgba",
-        )),
-    };
-    Ok(ImageStruct {
-        width: image.width,
-        height: image.width,
-        color_type: color_type,
-        pixels: gray_data,
-        trns: image.trns.clone(),
-        plte: image.plte.clone(),
-    })
-}
-*/

@@ -1,6 +1,0 @@
-Bank;BLZ;Kontonummer;PIN;Kontostand;Kontoart;Zins %;Ueberziehungsbetrag;Kundennummer;Name;Vorname;Kunde Straﬂe;Kunde PLZ;Kunde Ort
-VR Bank Rhein-Neckar;MA2424;4711;1234;50,14 Ä;Sparkonto;3%;;123456;Mustermann;Max;Bahnhofstraﬂe 1;68159;Mannheim
-VR Bank Rhein-Neckar;MA2424;8321;1234;500,14;Girokonto;;1.000 Ä;123456;Mustermann;Max;Bahnhofstraﬂe 1;68159;Mannheim
-Berliner Bank;19087;1717;1234;500,14;Sparkonto;1,003;;717171;Mustermann;Max;Bahnhofstraﬂe 1;68159;Mannheim
-Berliner Bank;19087;1919;1234;540,2;Sparkonto;1,1;;717171;Mustermann;Max;Bahnhofstraﬂe 1;68159;Mannheim
-Zocker Bank;Zock7777;4444;7777;-8000,5;Girokonto;;50000,5;31124;Hogo;Gruber;Berlinestraﬂ 33 / 1;07899;Berlin

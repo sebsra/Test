@@ -75,20 +75,15 @@ public class KontoController {
 				return;
 			}
 			if (konto.getKontostand() < betrag) {
-				if (konto instanceof Girokonto) {
-					Girokonto girokonto = (Girokonto) konto;
-					if (girokonto.getUeberziehungsbetrag() >= betrag - konto.getKontostand()) {
-						int confirmResult = JOptionPane.showConfirmDialog(view, "Möchten Sie das Konto überziehen?",
-								"Bestätigung", JOptionPane.YES_NO_OPTION);
-						if (confirmResult != JOptionPane.YES_OPTION) {
-							return;
-						}
-					}
-				} else {
-					JOptionPane.showMessageDialog(view, "Sie haben nicht genug Geld auf dem Konto.", "Fehler",
-							JOptionPane.ERROR_MESSAGE);
-					return;
-				}
+			    if (konto instanceof Girokonto && ((Girokonto) konto).getUeberziehungsbetrag() >= betrag - konto.getKontostand()) {
+			        int confirmResult = JOptionPane.showConfirmDialog(view, "Möchten Sie das Konto überziehen?", "Bestätigung", JOptionPane.YES_NO_OPTION);
+			        if (confirmResult != JOptionPane.YES_OPTION) {
+			            return;
+			        }
+			    } else {
+			        JOptionPane.showMessageDialog(view, "Sie haben nicht genug Geld auf dem Konto.", "Fehler", JOptionPane.ERROR_MESSAGE);
+			        return;
+			    }
 			}
 			konto.auszahlen(betrag);
 			JOptionPane.showMessageDialog(view, "Die Auszahlung wurde erfolgreich durchgeführt.", "Erfolg",

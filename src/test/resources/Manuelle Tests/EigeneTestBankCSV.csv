@@ -1,0 +1,13 @@
+Bank;BLZ;Kontonummer;PIN;Kontostand;Kontoart;Zins %;Ueberziehungsbetrag;Kundennummer;Name;Vorname;Straﬂe;PLZ;Ort
+VR Bank Rhein-Neckar;Vr1;1;1;0,00 Ä;Sparkonto;1,11%;;1;Name.Vr1/1;Vorname.Vr1/1;Straﬂe.Vr1/1;PLZ.Vr1/1;Ort.Vr1/1
+Sparkasse Rhein-Neckar;Sp1;1;1;0;Sparkonto;1,1;;1;Name.Sp1/1;Vorname.Sp1/1;Straﬂe.Sp1/1;PLZ.Sp1/1;Ort.Sp1/1
+Berliner Bank11;Br11;1;1;-100;Sparkonto;10;;11;Name.Br11/11;Vorname.Br11/11;Straﬂe.Br11/11;PLZ.Br11/11;Ort.Br11/11
+VR Bank Rhein-Neckar;Vr1;2;1;0;Girokonto;;222;1;Name.Vr1/1;Vorname.Vr1/1;Straﬂe.Vr1/1;PLZ.Vr1/1;Ort.Vr1/1
+Sparkasse Rhein-Neckar;Sp1;2;1;0 Ä;Girokonto;;2.000 Ä;1;Name.Sp1/1;Vorname.Sp1/1;Straﬂe.Sp1/1;PLZ.Sp1/1;Ort.Sp1/1
+Berliner Bank11;Br11;2;1;0,00 Ä;Girokonto;;20;11;Name.Br11/11;Vorname.Br11/11;Straﬂe.Br11/11;PLZ.Br11/11;Ort.Br11/11
+VR Bank Rhein-Neckar;Vr1;3;1;0,00 Ä;Girokonto;;222;2;Name.Vr1/2;Vorname.Vr1/2;Straﬂe.Vr1/2;PLZ.Vr1/2;Ort.Vr1/2
+Sparkasse Rhein-Neckar;Sp1;3;1;0 Ä;Girokonto;;2.000 Ä;2;Name.Sp1/2;Vorname.Sp1/2;Straﬂe.Sp1/2;PLZ.Sp1/2;Ort.Sp1/2
+Berliner Bank11;Br11;3;1;-100,00 Ä;Girokonto;;20;22;Name.Br11/22;Vorname.Br11/22;Straﬂe.Br11/22;PLZ.Br11/22;Ort.Br11/22
+VR Bank Rhein-Neckar2;Vr2;2;1;0,00 Ä;Girokonto;;222;2;Name.Vr2/2;Vorname.Vr2/2;Straﬂe.Vr2/2;PLZ.Vr2/2;Ort.Vr2/2
+Sparkasse Rhein-Neckar2;Sp2;3;2;5,00 Ä;Girokonto;;2.000 Ä;3;Name.Sp2/3;Vorname.Sp2/3;Straﬂe.Sp2/3;PLZ.Sp2/3;Ort.Sp2/3
+Berliner Bank22;Br3;4;3;0,00 Ä;Girokonto;;20;4;Name.Br3/4;Vorname.Br3/4;Straﬂe.Br3/4;PLZ.Br3/4;Ort.Br3/4

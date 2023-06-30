@@ -54,56 +54,56 @@ public class KontoView extends JFrame {
 		nameLabel.setBounds(spalte1, kontonummerLabel.getY() + 30, 200, 20);
 		panel.add(nameLabel);
 		name = new JLabel();
-		name.setBounds(spalte2, nameLabel.getY(), 200, 20);
+		name.setBounds(spalte2, nameLabel.getY(), 350, 20);
 		panel.add(name);
 
 		adresseLabel = new JLabel("Adresse");
 		adresseLabel.setBounds(spalte1, nameLabel.getY() + 30, 200, 20);
 		panel.add(adresseLabel);
 		adresse = new JLabel();
-		adresse.setBounds(spalte2, adresseLabel.getY(), 200, 20);
+		adresse.setBounds(spalte2, adresseLabel.getY(), 350, 20);
 		panel.add(adresse);
 
 		bankLabel = new JLabel("Bank");
 		bankLabel.setBounds(spalte1, adresseLabel.getY() + 30, 200, 20);
 		panel.add(bankLabel);
 		bank = new JLabel();
-		bank.setBounds(spalte2, bankLabel.getY(), 200, 20);
+		bank.setBounds(spalte2, bankLabel.getY(), 350, 20);
 		panel.add(bank);
 
 		blzLabel = new JLabel("BLZ");
 		blzLabel.setBounds(spalte1, bankLabel.getY() + 30, 200, 20);
 		panel.add(blzLabel);
 		blz = new JLabel();
-		blz.setBounds(spalte2, blzLabel.getY(), 200, 20);
+		blz.setBounds(spalte2, blzLabel.getY(), 350, 20);
 		panel.add(blz);
 
 		blzLabel = new JLabel("BLZ");
 		blzLabel.setBounds(spalte1, bankLabel.getY() + 30, 200, 20);
 		panel.add(blzLabel);
 		blz = new JLabel();
-		blz.setBounds(spalte2, blzLabel.getY(), 200, 20);
+		blz.setBounds(spalte2, blzLabel.getY(), 350, 20);
 		panel.add(blz);
 
 		kontotypLabel = new JLabel("Konto");
 		kontotypLabel.setBounds(spalte1, blzLabel.getY() + 30, 200, 20);
 		panel.add(kontotypLabel);
 		kontotyp = new JLabel();
-		kontotyp.setBounds(spalte2, kontotypLabel.getY(), 200, 20);
+		kontotyp.setBounds(spalte2, kontotypLabel.getY(), 350, 20);
 		panel.add(kontotyp);
 
 		zinsOderUeberziehungLabel = new JLabel();
 		zinsOderUeberziehungLabel.setBounds(spalte1, kontotypLabel.getY() + 30, 200, 20);
 		panel.add(zinsOderUeberziehungLabel);
 		zinsOderUeberziehung = new JLabel();
-		zinsOderUeberziehung.setBounds(spalte2, zinsOderUeberziehungLabel.getY(), 200, 20);
+		zinsOderUeberziehung.setBounds(spalte2, zinsOderUeberziehungLabel.getY(), 350, 20);
 		panel.add(zinsOderUeberziehung);
 
 		kontostandLabel = new JLabel("Kontostand");
 		kontostandLabel.setBounds(spalte1, zinsOderUeberziehungLabel.getY() + 30, 200, 20);
 		panel.add(kontostandLabel);
 		kontostand = new JLabel();
-		kontostand.setBounds(spalte2, kontostandLabel.getY(), 200, 20);
+		kontostand.setBounds(spalte2, kontostandLabel.getY(), 350, 20);
 		panel.add(kontostand);
 
 		logoutButton = new JButton("Logout");
